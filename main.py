@@ -21,7 +21,7 @@ def disdata():
    cnxn = pypyodbc.connect('DRIVER='+driver+';SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
    cursor = cnxn.cursor()
    start = time.time()
-   cursor.execute("SELECT TOP 10 * FROM equake")
+   cursor.execute("SELECT TOP 10 * FROM [equake]")
    row = cursor.fetchall()
    end = time.time()
    executiontime = end - start
