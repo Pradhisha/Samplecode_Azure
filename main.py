@@ -6,7 +6,7 @@ import random
 import urllib
 import datetime
 import json
-import redis
+
 
 app = Flask(__name__)
 
